@@ -6,6 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  message: string = "Hello from BridgeLabz";  
-  logoPath: string = "C:\Users\cw\OneDrive\Desktop\Angular_App\angularapp\src\assets\BL_logo_square_jpg.jpg";  
+    
+   
+
+
+
+  openBridgeLabz() {
+    window.open("https://www.bridgelabz.com", "_blank");
+  }
 }
