@@ -6,10 +6,13 @@
   (click)="openBridgeLabz()" 
   style="cursor: pointer;">
 
-  <h1>"Enter Your Name", {{ userName }}</h1>
+  <h1>Welcome to BridgeLabz, {{ userName }}</h1>
 
 <input 
-  type="text" 
-  [(ngModel)]="userName" 
-  placeholder="Enter your name"
+type="text" 
+[(ngModel)]="userName" 
+(input)="validateName()" 
+placeholder="Enter your name"
 >
+
+<p *ngIf="errorMessage" style="color: red;">{{ errorMessage }}</p>
