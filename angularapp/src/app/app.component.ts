@@ -10,8 +10,8 @@ import { CommonModule } from '@angular/common';
   imports: [FormsModule, CommonModule] 
 })
 export class AppComponent {
-    
-  logoPath: string = "C:\Users\cw\OneDrive\Desktop\Angular_App\angularapp\src\assets\BL_logo_square_jpg.jpg";   
+  message: string = "Hello from BridgeLabz";  
+  logoPath: string = "assets/BL_logo_square_jpg.jpg";   
   userName: string = "";
   errorMessage: string = ""; 
   validateName() {

@@ -1,4 +1,4 @@
-<h1>Welcome to BridgeLabz</h1>
+<h1>{{ message }}</h1>
 <img 
   [src]="logoPath" 
   alt="BridgeLabz Logo" 
@@ -6,7 +6,7 @@
   (click)="openBridgeLabz()" 
   style="cursor: pointer;">
 
-  <h1>Welcome to BridgeLabz, {{ userName }}</h1>
+  <h1>{{ message }}, {{ userName }}</h1>
 
 <input 
 type="text" 
